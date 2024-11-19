@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <header>
+        <h1>Setthawut Baowanont</h1>
+    </header>
+
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">&#9776; เมนู</div>
+        <ul>
+            <li><a href="#about">&#10052;About Me&#10052;</a></li>
+            <li><a href="#education">&#10052;Education&#10052;</a></li>
+            <li><a href="#projects">&#10052;Projects&#10052;</a></li>
+            <li><a href="#skills">&#10052;Skills&#10052;</a></li>
+            <li><a href="#contact">&#10052;Contact&#10052;</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <img class="profile" src="kong.jpg" alt="Profile Image">
+        <h2>About Me</h2>
+        <hr>
+        <p>Program: <em>Computer Engineering and Artificial Intelligence</em></p>
+        <p>Faculty: Engineering and Technology</p>
+        <p>Institution: <a href="http://pim.ac.th" target="_blank">Panyapiwat Institute of Management</a></p>
+        <hr>
+        <p>Brief Bio: Passionate about leveraging technology and innovative solutions to solve real-world problems while contributing to the growth and efficiency of the software development process.</p>
+    </section>    
+
+    <section id="education">
+        <h2>Education</h2>
+        <hr>
+        <p>PIM-Panyapiwat Institute of Management computer and technology</p>
+        <p>2023-now</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <hr>
+        <h3>Predicting Sales with Advertising Data</h3>
+        <p><strong>Course:</strong> Machine Learning</p>
+        <p>Built a linear regression model to forecast sales based on advertising spend. Utilized statistical techniques to enhance prediction accuracy.</p>
+        
+        <h3>Empty Shelf Detection with YOLO</h3>
+        <p>Developed a custom YOLO-based object detection model for identifying empty shelves in retail.</p> 
+        <p>Optimized the model for real-time performance and designed a user-friendly UX/UI for applications.</p>
+    </section>
+
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <hr>
+        <ul>
+            <li>HTML, CSS</li>
+            <li>JavaScript</li>
+            <li>C#</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <hr>
+        <ol>
+            <li>Email: 6652300923<span><img class="arm" src="suparm.JPG" alt="$" style="width: 16px; height: 16px;"></span> pim.ac.th</li>
+            <li>Tel : 097-245-1098</li>
+            <li>Address : Nonthaburi </li>
+        </ol>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Panyapiwat Institute of Management</p>
+    </footer>
+
+    <link rel="stylesheet" href="index.js">
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

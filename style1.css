@@ -1,0 +1,131 @@
+
+/* Body and General Styles */
+body {
+    font-family: 'Prompt', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #071c33;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: left;
+}
+h2{ 
+    background-color: #a5062e;
+    padding: 0.5rem;
+    color: rgb(255, 255, 255);
+}
+/* Navbar */
+nav {
+    background-color: #9b0a0a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    padding: 14px 20px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hamburger button */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+}
+
+/* Profile Image */
+.profile {
+    border-radius: 50%;
+    width: 13%;
+    height: 13%;
+    display: block;
+    margin: 0 auto;
+    border-color :black ;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin: 10px 0;
+}
+
+section h2 {
+    font-size: 2rem;
+}
+
+/* Contact Section */
+ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+img.moo {
+    border-radius: 50%;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Hide the nav items by default */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Show hamburger button */
+    .hamburger {
+        display: block;
+    }
+
+    /* When active, display the menu */
+    nav.active ul {
+        display: flex;
+    }
+
+    /* Align list items and links */
+    nav ul li {
+        text-align: center;
+        width: 100%;
+    }
+
+    nav ul li a {
+        padding: 15px;
+        width: 100%;
+    }
+}
